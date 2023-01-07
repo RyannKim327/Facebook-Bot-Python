@@ -1,7 +1,8 @@
 from fbchat import Client, log
+from fbchat.models import *
 import re
 
-class EchoBot(Client):
+class __EchoBot(Client):
 	selfRead = False
 	commands = []
 
@@ -20,17 +21,20 @@ class EchoBot(Client):
 		def send(msg=""):
 			self.sendMessage(msg, thread_id=thread_id, thread_type=thread_type)
 
+		def sendReply(msg="", mid=""):
+			self.send(Message(text = msg, reply_to_id = mid), thread_id=thread_id, thread_type=thread_type)
+
 		if self.selfRead or author_id != self.uid:
 			for i in self.commands:
 				command = "^" + i['data']['command'] + "$"
 				if re.search(command, message):
-					send("This is an auto send message from fbchat")
+					sendReply("This is an auto send message from fbchat", mid)
 
 
 
 class Execute:
 	def __init__(self, email="", password=""):
-		self.c = EchoBot(email, password)
+		self.c = __EchoBot(email, password)
 	
 	def setSelfListen(self, isSelfListen=False):
 		self.c.selfRead(isSelfListen)
