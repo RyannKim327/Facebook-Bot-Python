@@ -1,6 +1,6 @@
 from echo import Execute
 
-# sample: a = Execute("09123456789", "Hello world")
+# sample: a = Execute("09123456789", "HelloWorld")
 a = Execute("<email>", "<password>")
 
 a.setSelfListen(True)

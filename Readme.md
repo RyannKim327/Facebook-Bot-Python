@@ -2,7 +2,7 @@
 #### MPOP Reverse II (Ryann Kim Sesgundo)
 
 ---
-<blockquote style="text-align: justify">&emsp;This is my code and sample project for facebook bot that uses python programming. For more, kindly read this [DOCUMENTATION](https://fbchat.readthedocs.io/en/stable/examples.html#echobot)</blockquote>
+<blockquote style="text-align: justify;">&emsp;This is my code and sample project for facebook bot that uses python programming. For more, kindly read this <a href="https://fbchat.readthedocs.io/en/stable/examples.html">DOCUMENTATION</a></blockquote>
 
 ---
 ### Package used (FBCHAT)
@@ -12,11 +12,11 @@ pip install fbchat
 
 ---
 <h3 style="color: blue">Disclaimer</h3>
-<blockquote style="text-align: justify">&emsp;The fbchat I've used still having error, abpout the line 192 `revision` variable. So that, I've changed the value of it as int(user_id) and it fixed.</blockquote>
+<blockquote style="text-align: justify;">&emsp;The fbchat I've used still having error, abpout the line 192 `revision` variable. So that, I've changed the value of it as int(user_id) and it fixed.</blockquote>
 
 ---
 <h3 style="color: red">Warning</h3>
-<blockquote style="text-align: justify">&emsp;Must be aware that the account you may use might have some errors while debugging. So must create a whitehat account or dummy account to avoid this issue to your main account. I won't tollerate you to create a dummy account for some illegal activities, but only for educational purposes. This project is created not just for entertainment, but also for you to learn this programming language. This warning may help you to avoid some crash and errors also issues to your main account, that's why I give a warning to you.</blockquote>
+<blockquote style="text-align: justify;">&emsp;Must be aware that the account you may use might have some errors while debugging. So must create a whitehat account or dummy account to avoid this issue to your main account. I won't tollerate you to create a dummy account for some illegal activities, but only for educational purposes. This project is created not just for entertainment, but also for you to learn this programming language. This warning may help you to avoid some crash and errors also issues to your main account, that's why I give a warning to you.</blockquote>
 
 ---
 ### Credits
@@ -32,4 +32,4 @@ pip install fbchat
 
 ---
 
-<h3 style="color: white; text-align: center;"> Copyright © 2022 Ryann Kim Sesgundo</h3>
+<h3 style="color: white; text-align: center;">Copyright © 2022 Ryann Kim Sesgundo</h3>
