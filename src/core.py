@@ -7,14 +7,24 @@ class __actions__(Client):
 	
 	def onMessage(self, mid, author_id, message, message_object, thread_id, thread_type, **kwargs):
 
-		def __msg__(text: str = "", isReply: bool = False):
+		def __msg__(text = str, isReply: bool = False):
 			if isReply:
-				self.send(Message(text = text, reply_to_id = mid), thread_id = thread_id, thread_type = thread_type)
+				self.send(Message(text = text, reply_to_id = mid), thread_id, thread_type)
 			else:
-				self.send(Message(text = text), thread_id = thread_id, thread_type = thread_type)
+				self.send(Message(text = text), thread_id, thread_type)
+		
+		def __img__(text: str = "", imgDir = str):
+			self.sendLocalImage(imgDir, Message(text=text), thread_id, thread_type)
+
+		def __reaction__(react: str):
+			self.reactToMessage(mid, react)
+
+		def __typing__():
+			self.setTypingStatus(TypingStatus.TYPING, thread_id, thread_type)
 
 		if author_id != self.uid or self.selfRead:
 			if(message == "test mode"):
+				__typing__()
 				__msg__("Hello World")
 
 
